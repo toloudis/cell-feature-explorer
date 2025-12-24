@@ -21,7 +21,7 @@ import AlignControl from "../../components/AlignControl";
 import { SetSmallScreenWarningAction, RequestAction } from "../../state/metadata/types";
 import { getPropsForVolumeViewer, getViewerHeader, VolumeViewerProps } from "./selectors";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 const { Content, Sider } = Layout;
 

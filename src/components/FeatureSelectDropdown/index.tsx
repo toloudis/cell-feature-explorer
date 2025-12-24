@@ -3,7 +3,7 @@ import { SelectProps, SelectValue } from "antd/es/select";
 import React from "react";
 import { MeasuredFeatureDef } from "../../state/metadata/types";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 interface FeatureSelectDropdownProps {
     value: string;

@@ -41,7 +41,7 @@ import { getSelectedAlbumName, getThumbnails } from "./selectors";
 
 const Search = Input.Search;
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 interface PropsFromState {
     albumData: Album[];

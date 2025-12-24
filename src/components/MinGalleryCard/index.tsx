@@ -7,7 +7,7 @@ import { DeselectPointAction, SelectPointAction } from "../../state/selection/ty
 import type { FileInfo } from "../../state/metadata/types";
 import { useThumbnail } from "../../util/thumbnails";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 interface GalleryCardProps {
     category: string;

@@ -4,7 +4,7 @@ import { Button, Card, Descriptions, Tag, Divider } from "antd";
 import { DatasetMetaData } from "../../state/image-dataset/types";
 const { Meta } = Card;
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 interface DatasetCardProps extends DatasetMetaData {
     handleSelectDataset: (id: string) => void;

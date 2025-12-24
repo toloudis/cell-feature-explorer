@@ -1,7 +1,7 @@
 import { Col, Row, Switch } from "antd";
 import React from "react";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 interface ColorBySwitcherProps {
     defaultChecked: boolean;

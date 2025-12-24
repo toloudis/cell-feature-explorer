@@ -3,7 +3,7 @@ import { DotChartOutlined, PictureOutlined, SyncOutlined } from "@ant-design/ico
 import React from "react";
 const { Link } = Anchor;
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 const offsetTop = 65;
 
 const AffixedNav: React.FC = () => {

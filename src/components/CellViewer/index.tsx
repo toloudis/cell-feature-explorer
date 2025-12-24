@@ -1,7 +1,7 @@
 import { ImageViewerApp, ViewerStateProvider } from "@aics/vole-app";
 import React from "react";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 import { VolumeViewerProps } from "../../containers/Cfe/selectors";
 

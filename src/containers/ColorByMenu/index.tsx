@@ -43,7 +43,7 @@ import {
 } from "./selectors";
 import { PanelData } from "./types";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 
 // const initIndex = 2;
 

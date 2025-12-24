@@ -47,7 +47,7 @@ import {
 import { getFeatureDefTooltip } from "../../state/selection/selectors";
 import { formatThumbnailSrc } from "../../state/util";
 
-import styles from "./style.css";
+import * as styles from "./style.css";
 import { createThumbnailImageSrc } from "../../util/thumbnails";
 
 /** Maximum number of auto-generated thumbnails to store. */

@@ -12,7 +12,7 @@ import imageDatasetStateBranch from "../../state/image-dataset";
 import { ImageDataset, LoadCsvDatasetAction } from "../../state/image-dataset/types";
 import { fetchCsvText, isAllenPath, isUrl } from "../../util";
 
-import styles from "./styles.css";
+import * as styles from "./styles.css";
 import { SetCsvUrlAction } from "../../state/selection/types";
 
 type DispatchProps = {
