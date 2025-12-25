@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
 import { resolve } from 'path';
 
 export default defineConfig(({ mode }) => {
@@ -8,6 +9,15 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react(),
+      svgr({
+        svgrOptions: {
+          exportType: 'default',
+          ref: true,
+          svgo: false,
+          titleProp: true,
+        },
+        include: '**/*.svg',
+      }),
     ],
     root: 'src',
     base: './',
@@ -31,6 +41,17 @@ export default defineConfig(({ mode }) => {
         ],
         output: {
           manualChunks: undefined,
+          globals: {
+            'firebase/compat/app': 'firebase',
+            'firebase/compat/firestore': 'firebase.firestore'
+          },
+          // Convert SVG data URIs from @ant-design/icons to asset files
+          assetFileNames: (assetInfo) => {
+            if (assetInfo.name && assetInfo.name.endsWith('.svg')) {
+              return 'assets/[name]-[hash][extname]';
+            }
+            return 'assets/[name]-[hash][extname]';
+          },
         },
       },
     },
