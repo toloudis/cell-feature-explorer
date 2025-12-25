@@ -1,4 +1,4 @@
-import { Timestamp } from "@firebase/firestore-types";
+import type { Timestamp } from "@firebase/firestore-types";
 
 import { ViewerChannelSettings } from "@aics/vole-app";
 

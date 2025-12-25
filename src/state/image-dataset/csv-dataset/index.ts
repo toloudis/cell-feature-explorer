@@ -10,7 +10,8 @@ import {
     ContinuousMeasuredFeatureDef,
 } from "../../metadata/types";
 import { ImageDataset, InitialDatasetSelections, Megaset } from "../types";
-import firebase from "firebase/compat/app";
+// Use Firebase from CDN (loaded in index.html)
+const firebase = (window as any).firebase;
 import {
     CELL_ID_KEY,
     FOV_ID_KEY,

@@ -24,14 +24,13 @@ export default defineConfig(({ mode }) => {
         input: {
           app: resolve(__dirname, 'src/index.html'),
         },
+        external: [
+          'firebase/compat/app',
+          'firebase/compat/firestore',
+          '@firebase/firestore-types'
+        ],
         output: {
-          // Add a plugin to make CSS modules work with default import
-          banner(chunk) {
-            if (chunk.facadeModuleId && chunk.facadeModuleId.endsWith('.css')) {
-              return '/* CSS Module with default export */';
-            }
-            return '';
-          },
+          manualChunks: undefined,
         },
       },
     },
@@ -50,12 +49,10 @@ export default defineConfig(({ mode }) => {
         'react-dom': resolve(__dirname, '../../node_modules/react-dom'),
         '@aics/vole-app': resolve(__dirname, '../vole-app/src'),
         'nouislider/distribute/nouislider.css': resolve(__dirname, '../../node_modules/nouislider/dist/nouislider.css'),
-        // Fix for react-plotly.js: ensure it uses the full plotly.js library
-        'plotly.js-dist-min': 'plotly.js/dist/plotly',
       },
     },
     optimizeDeps: {
-      include: ['react', 'react-dom', 'plotly.js/dist/plotly'],
+      include: ['react', 'react-dom'],
     },
     css: {
       modules: {

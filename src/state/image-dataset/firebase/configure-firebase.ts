@@ -1,6 +1,7 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import { FirebaseFirestore } from "@firebase/firestore-types";
+// Use Firebase from CDN (loaded in index.html)
+const firebase = (window as any).firebase;
+
+import type { FirebaseFirestore } from "@firebase/firestore-types";
 
 const firebaseConfig = {
     apiKey: "AIzaSyD691xhXsWl-8QU_9htjZnMUd7siWVCTAE",
