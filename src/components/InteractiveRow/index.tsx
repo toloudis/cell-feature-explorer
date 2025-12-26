@@ -6,7 +6,7 @@ import React, { MouseEvent } from "react";
 import { DownloadConfig } from "../../state/selection/types";
 import DownloadDropDownMenu from "../DownloadDropDownMenu";
 
-import * as styles from "./style.css";
+import * as styles from "./style.module.css";
 
 interface InteractiveRowProps {
     color: string;

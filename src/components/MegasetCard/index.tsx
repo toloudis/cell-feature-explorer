@@ -4,7 +4,7 @@ import { map } from "lodash";
 import { Megaset } from "../../state/image-dataset/types";
 import DatasetCard from "../../components/DatasetCard";
 
-import * as styles from "./style.css";
+import * as styles from "./style.module.css";
 
 interface MegasetCardProps {
     key: string;

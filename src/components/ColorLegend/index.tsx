@@ -1,7 +1,7 @@
 import { Badge } from "antd";
 import React from "react";
 
-import * as styles from "./style.css";
+import * as styles from "./style.module.css";
 
 interface InteractiveRowProps {
     color: string;

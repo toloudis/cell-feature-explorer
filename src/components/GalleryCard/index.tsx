@@ -9,7 +9,7 @@ import type { FileInfo } from "../../state/metadata/types";
 import type { DeselectPointAction, SelectPointAction } from "../../state/selection/types";
 import { useThumbnail } from "../../util/thumbnails";
 
-import * as styles from "./style.css";
+import * as styles from "./style.module.css";
 
 interface GalleryCardProps {
     category: string;

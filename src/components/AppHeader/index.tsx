@@ -3,7 +3,7 @@ import * as React from "react";
 
 import { AicsLogo } from "../Icons";
 
-import * as styles from "./style.css";
+import * as styles from "./style.module.css";
 import CsvInput from "../../containers/CsvInput";
 
 interface AppHeaderProps {

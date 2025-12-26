@@ -9,7 +9,7 @@ import React, { MouseEvent } from "react";
 
 import { DownloadConfig } from "../../state/selection/types";
 
-import * as styles from "./style.css";
+import * as styles from "./style.module.css";
 import { NO_DOWNLOADS_TOOLTIP } from "../../constants";
 
 interface DownloadDropDownMenuProps {
